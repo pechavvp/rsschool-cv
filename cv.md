@@ -1,20 +1,20 @@
-## 1. Vladimir Pechkin
+## Vladimir Pechkin
 
-## 1. Contacts
+## Contacts
 * **E-mail:** vvp98@yandex.ru
 * **Telegram:** vvp11
 * **GitHub:** pechavvp
 
-## 1. About
+## About
 I am currently working as a sales manager. I want to learn a new profession and change my life. Now i'm interested in web development, so i decided to go to RS School.
 
-## 1. Skills
+## Skills
 * HTML & CSS
 * JavaScript
 * Photoshop & Figma
 * Git
 
-## 1. Code Example
+## Code Example
 ```javascript
 function areYouPlayingBanjo(name) {
   const arr = name.split("");
@@ -26,10 +26,10 @@ function areYouPlayingBanjo(name) {
 }
 ```
 
-## 1. Education
+## Education
 * HTML-Academy
 * Youtube tutorials
 
-## 1. Languages
+## Languages
 * Russian - native
 * English - B1
