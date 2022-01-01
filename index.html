@@ -5,22 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>CV Vladimir Pechkin</title>
+    <title>Vladimir Pechkin CV</title>
+    <link href="prism.css" rel="stylesheet" />
 </head>
 <body>
     <div class="main-block">
         <header>
-            <h1>Vladimir Pechkin</h1>
+            <h1 class="headline-bg">Vladimir Pechkin</h1>
         </header>
-        
         <main>
             <figure>
-                <img src="iam.jpg" width="300" alt="Vladimir Pechkin">
+                <img src="iam.jpg" width="290" alt="Vladimir Pechkin">
                 <figcaption>It's me</figcaption>
             </figure>
 
             <section>
-                <h2>Contacts</h2>
+                <h2 class="headline-bg">Menu</h2>
+                <nav>
+                    <ul>
+                        <li><a href="#contacts">Contacts</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#code">Code Example</a></li>
+                        <li><a href="#projects">My projects</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#languages">Languages</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section>
+                <h2 id="contacts" class="headline-bg">Contacts</h2>
                 <ul>
                     <li><b>E-mail:</b> vvp98@yandex.ru</li>
                     <li><b>Telegram:</b> vvp11</li>
@@ -29,12 +44,12 @@
             </section>
 
             <section>
-                <h2>About</h2>
-                <p>I am currently working as a sales manager. I want to learn a new profession and change my life. Now i'm interested in web development, so i decided to go to RS School.</p>
+                <h2 id="about" class="headline-bg">About</h2>
+                <p class="about-style">I am currently working as a sales manager. I want to learn a new profession and change my life. Now i'm interested in web development, so i decided to go to RS School.</p>
             </section>
 
             <section>
-                <h2>Skills</h2>
+                <h2 id="skills" class="headline-bg">Skills</h2>
                 <ul>
                     <li>HTML & CSS</li>
                     <li>JavaScript</li>
@@ -44,31 +59,73 @@
             </section>
 
             <section>
-                <h2>Code Example</h2>
+                <h2 id="code" class="headline-bg">Code Example</h2>
                 <pre>
-                    <code>
-                        function areYouPlayingBanjo(name) {
-                            const arr = name.split("");
-                            if (arr[0] === "R" || arr[0] === "r") {
-                            return `${name} plays banjo`;
-                            } else {
-                            return `${name} does not play banjo`;
-                            }
-                        }
+                    <code class="language-js">
+function areYouPlayingBanjo(name) {
+    const arr = name.split("");
+    if (arr[0] === "R" || arr[0] === "r") {
+    return `${name} plays banjo`;
+    } else {
+    return `${name} does not play banjo`;
+    }
+}
                     </code>
                 </pre>
             </section>
 
             <section>
-                <h2>Education</h2>
+                <h2 id="projects" class="headline-bg">My projects</h2>
+                <div class="projects-main">
+                    <div class="projects-item">
+                        <a target="_blank" title="Web development project" href="https://pechavvp.github.io/Web-Development-Project/"><img src="scr1.jpg" width="230" alt="Web development project"></a>
+                        <h3>Web development project</h3>
+                        <p>Landing page</p>
+                        <p><b><a target="_blank" title="Web development project" href="https://pechavvp.github.io/Web-Development-Project/">Link>>></a></b></p>
+                        <p><b>Technologies used:</b></p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+
+                    <div class="projects-item">
+                        <a target="_blank" title="Dart Service Manager" href="https://pechavvp.github.io/Dart-Service-Manager/"><img src="scr2.jpg" width="230" alt="Dart Service Manager"></a>
+                        <h3>Dart-Service-Manager</h3>
+                        <p>Landing page</p>
+                        <p><b><a target="_blank" title="Dart Service Manager" href="https://pechavvp.github.io/Dart-Service-Manager/">Link>>></a></b></p>
+                        <p><b>Technologies used:</b></p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+
+                    <div class="projects-item">
+                        <a target="_blank" title="Bukee" href="https://pechavvp.github.io/tp-bukee/"><img src="scr3.jpg" width="230" alt="Bukee"></a>
+                        <h3>Bukee</h3>
+                        <p>Landing page</p>
+                        <p><b><a target="_blank" title="Bukee" href="https://pechavvp.github.io/tp-bukee/">Link>>></a></b></p>
+                        <p><b>Technologies used:</b></p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 id="education" class="headline-bg">Education</h2>
                 <ul>
+                    <li>The Bonch-Bruevich Saint Petersburg State University of Telecommunications</li>
                     <li>HTML-Academy</li>
                     <li>Youtube tutorials</li>
                 </ul>
             </section>
 
             <section>
-                <h2>Languages</h2>
+                <h2 id="languages" class="headline-bg">Languages</h2>
                 <ul>
                     <li>Russian - native</li>
                     <li>English - B1</li>
@@ -77,10 +134,11 @@
         </main>
 
         <footer>
-            <a href="https://github.com/pechavvp"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" width="100" alt="GitHub"></a>
-            <p>2021&#169;</p>
-            <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" width="100" alt="RS School"></a>
+            <a target="_blank" title="My GitHub" href="https://github.com/pechavvp"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" width="100" alt="GitHub"></a>
+            <p class="year">2022&#169;</p>
+            <a target="_blank" title="RS School" href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" width="100" alt="RS School"></a>
         </footer>
     </div>
+    <script src="prism.js"></script>
 </body>
 </html>
